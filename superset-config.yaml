@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: superset-config
+data:
+  superset_config.py: |
+    # Superset specific config
+    SECRET_KEY = 'thisISaSECRET_1234'
+    SQLALCHEMY_DATABASE_URI = 'sqlite:////var/lib/superset/superset.db'
+    # Other configuration variables...
